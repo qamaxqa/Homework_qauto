@@ -3,7 +3,7 @@
 describe('hillel auto', () => {
   const userAndPass = `${Cypress.env('siteAuthUserName')}:${Cypress.env('siteAuthPassword')}`
 
-  it('test lile upload', () => {
+  it('test file upload', () => {
     cy.visit(`https://${userAndPass}@qauto.forstudy.space/`)
     cy.request('POST', 'https://qauto.forstudy.space/api/auth/signin', {
       "email": Cypress.env('user'),
